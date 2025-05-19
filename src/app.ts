@@ -2,6 +2,7 @@ import cors from 'cors';
 import express, { Application, Request, Response } from 'express';
 import { globalErrorHandler } from './app/middleeatres/globalErrorHandler';
 import userRouter from './app/modules/user/user.router';
+import authRouter from './app/modules/auth/auth.router';
 
 const app: Application = express();
 
@@ -29,7 +30,8 @@ app.get('/', getAController)
 app.use(globalErrorHandler)
 
 // routes
-app.use('api/user', userRouter)
+app.use('/api/user', userRouter)
+app.use('/api/auth', authRouter);
 
 app.use("*", (req: Request, res: Response) =>{
   res.status(404).json({
