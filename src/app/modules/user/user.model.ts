@@ -20,10 +20,6 @@ const userSchema = new Schema<IUser>({
     },
     immutable: true,
   },
-  phoneNumber: {
-    type: String,
-    required: true,
-  },
   role: {
     type: String,
     enum: {
