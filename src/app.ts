@@ -3,6 +3,7 @@ import express, { Application, Request, Response } from 'express';
 import { globalErrorHandler } from './app/middleeatres/globalErrorHandler';
 import userRouter from './app/modules/user/user.router';
 import authRouter from './app/modules/auth/auth.router';
+import operatorRouter from './app/modules/operator/operator.router';
 
 const app: Application = express();
 
@@ -13,6 +14,7 @@ app.use(
       "http://localhost:5173",
       "http://localhost:5174",
       "http://localhost:5175",
+      "http://localhost:3000"
     ],
     credentials: true,
   })
@@ -32,6 +34,7 @@ app.use(globalErrorHandler)
 // routes
 app.use('/api/user', userRouter)
 app.use('/api/auth', authRouter);
+app.use('/api', operatorRouter);
 
 app.use("*", (req: Request, res: Response) =>{
   res.status(404).json({
