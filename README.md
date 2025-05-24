@@ -8,11 +8,8 @@
 
 - [Overview](#overview)
 - [Features](#features)
-- [Getting Started](#getting-started)
 - [API Documentation](#api-documentation)
 - [Operator Management](#operator-management)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -28,35 +25,6 @@ This repository contains the server-side implementation of the Insights platform
 - TypeScript-based codebase for type safety and maintainability
 - Integration-ready for various client-side applications
 - Easily extensible backend architecture
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v14 or later recommended)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-
-### Installation
-
-```bash
-git clone https://github.com/Hamed18/Insights-serverside.git
-cd Insights-serverside
-npm install
-# or
-yarn install
-```
-
-### Running the Server
-
-```bash
-npm start
-# or
-yarn start
-```
-
-The server will start on the default port unless otherwise specified in the environment variables.
 
 ---
 
@@ -102,15 +70,3 @@ _For detailed request/response schema, authentication, and more endpoints, visit
 The backend supports operator management, allowing administrators to create, update, and manage operators via the provided API endpoints.
 
 - **Create Operator**: See [API Docs - Create Operator](http://103.148.212.44/backend/redoc#tag/operator/operation/create_operator_api_operator_post)
-
----
-
-## Contributing
-
-Contributions are welcome! Please fork the repository, make changes, and submit a pull request.
-
-1. Fork this repo
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Create a new Pull Request
