@@ -20,27 +20,26 @@ operatorRouter.post(
 );
 
 operatorRouter.get("/operators", operatorController.getOperators);
-/*
-operatorRouter.get("/operators/:operatorId", operatorController.getSingleOperator);
 
-operatorRouter.put(
-  "/operators/_id",
-  operatorController.updateOperator 
-);
-
-operatorRouter.delete(
-  "/operators/_Id",
-  operatorController.deleteOperator 
-);
-*/
+// operatorRouter.get("/operators/:employee_id", operatorController.getSingleOperator);
 
 // operatorRouter.put(
-//   "/operators/:operatorId",
+//   "/operators/employee_id",
+//   operatorController.updateOperator 
+// );
+
+// operatorRouter.delete(
+//   "/operators/employee_id",
+//   operatorController.deleteOperator 
+// );
+
+// operatorRouter.put(
+//   "/operators/:employee_id",
 //   auth(USER_ROLE.operator),
 //   operatorController.updateOperator
 // );
 // operatorRouter.delete(
-//   "/operators/:operatorId",
+//   "/operators/:employee_id",
 //   auth(USER_ROLE.operator),
 //   operatorController.deleteOperator
 // );
